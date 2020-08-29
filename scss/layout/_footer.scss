@@ -1,0 +1,74 @@
+.footer{
+    background-color:$lightgreen ;
+    padding-bottom: 30px;
+  
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    @include iPad{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+        }
+    @include tablet{
+        max-width: 767px;
+        }
+    @include iPad{
+        width: 70%;
+        margin: 0 auto;
+        }
+    p{
+    color: $darkgreen;
+    margin-top: 46.31px;
+    @include iPad{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+  }
+  .slogan{
+    @include iPad{
+        display:none;
+        }
+  }
+ }
+}
+  .info img{
+    width: 171px;
+    margin-top: 38.9px;
+    margin-bottom: 115.5px;
+    @include iPad{
+        margin-bottom: 30px;
+    }
+  }
+  .contact h3{
+    font-size:$small;
+    line-height: $content2;
+    color:$darkgreen ;
+  }
+  .slogan{
+    padding-top:30px;
+    width: 50%;
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 35px;
+    color: $darkgreen;
+    letter-spacing: 5px;
+  }
+  .social{
+    display: flex;
+    width: 50%; 
+  img{
+    width: 32px;
+    height: 32px;
+    @include iPad{
+        margin-top: 30px;
+    }
+  }
+   li a{
+    margin-right:8px;
+    margin-top: 30px;
+  }
+}
+  

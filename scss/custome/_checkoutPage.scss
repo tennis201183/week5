@@ -1,0 +1,64 @@
+.main{
+height: 460px;
+background-image: url(https://bit.ly/2P7GhNd);
+background-size: cover;
+background-repeat: no-repeat;
+margin-bottom: 60px;
+position: relative;
+}
+.check{
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 40%;
+    top:30%;
+    text-align: center;
+    @include mobile{
+        left: 28%;
+        }
+    li{
+        color: $darkgreen;
+        vertical-align: -4px;
+    }
+    .leftline{
+        display: inline-block;
+        width: 55px;
+        border-top: 1px solid $darkgreen ;
+    }
+    .rightline{
+        display: inline-block;
+        width: 66px;
+        border-top: 1px solid $darkgreen ;
+    }
+}
+.success{
+    height: 45.46px;
+    position: absolute;
+    left: 40%;
+    top:42%;
+    @include mobile{
+        left: 28%;
+        }
+}
+input[type="button"]{
+    font-size: $large;
+    color: $darkgreen;
+    text-align: center;
+    width: 300px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    background-color: $yellow;
+    border: $yellow solid 1px;
+    padding: 17px 102px 17px 102px;
+    
+    position: absolute;
+    left: 34%;
+    top:65%;
+    @include mobile{
+        width: 100%;
+        left: 0%;
+        top:100%;
+        }
+  }
